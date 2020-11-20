@@ -17,18 +17,6 @@ const Label = styled.label`
   font-weight: 500;
 `;
 
-// const Container = styled.div.attrs({
-//   unmountOnExit: true,
-//   timeout: 500,
-// })`
-//   width: 300px;
-//   height: max-content;
-//   border: none;
-//   border-radius: 3px;
-//   box-shadow: 2px 2px 7px -1px rgba(158, 158, 158, 0.71);
-//   padding: 20px;
-//   margin-bottom: 20px;
-// `;
 
 const Filter = ({ value, onChangeFilter }) => {
   return (

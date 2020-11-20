@@ -107,9 +107,11 @@ class App extends Component {
 
   filterFN = () => {
     const { contacts, filter } = this.state;
-    return contacts.filter((contact) =>
+    const filtered = contacts.filter((contact) =>
       contact.name.toLocaleLowerCase().includes(filter.toLocaleLowerCase())
     );
+
+    return filtered.length > 0 ? filtered : contacts;
   };
 
   changeFilter = (filter) => {
